@@ -35,8 +35,8 @@ public class ElectricTorchOnOff : MonoBehaviour
 
 	private void Awake()
     {
-		_batteryPower = FindObjectOfType<BatteryPowerPickup>();
-	}
+        _batteryPower = FindAnyObjectByType<BatteryPowerPickup>();
+    }
     void Start()
 	{
 		GameObject _scriptControllerEmissionFade = GameObject.Find("default");
